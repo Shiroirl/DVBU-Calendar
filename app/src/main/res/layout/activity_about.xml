@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/tittle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginBottom="612dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Home"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:layout_width="472dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivPitufin"
+                        android:layout_width="match_parent"
+                        android:layout_height="317dp"
+                        android:src="@drawable/caracol" />
+
+                    <TextView
+                        android:id="@+id/txtPitLore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Esta app facilitará la memorización de fechas significativas." />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivghost"
+                        android:layout_width="338dp"
+                        android:layout_height="317dp"
+                        android:src="@drawable/fantasmaxd" />
+
+                    <TextView
+                        android:id="@+id/txtGhost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aún esta en construcción por lo que le faltan algunas (muchas) opciones para estar completa." />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="https://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivKobenin"
+                        android:layout_width="338dp"
+                        android:layout_height="437dp"
+                        android:src="@drawable/kobenin" />
+
+                    <TextView
+                        android:id="@+id/txtKobenin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="the industrial revolution and its consequences.... Tengan paciencia que si se va a ver bonito y funcional." />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
